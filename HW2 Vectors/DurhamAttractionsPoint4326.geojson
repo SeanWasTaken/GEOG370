@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "DurhamAttractionsPoint4326",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1, "name": "Durham Bulls Athletic Park" }, "geometry": { "type": "Point", "coordinates": [ -78.903970780625173, 35.99160514773898 ] } },
+{ "type": "Feature", "properties": { "id": 2, "name": "Durham Performing Arts Center" }, "geometry": { "type": "Point", "coordinates": [ -78.902272497775684, 35.993214047280603 ] } },
+{ "type": "Feature", "properties": { "id": 3, "name": "American Tobacco Campus" }, "geometry": { "type": "Point", "coordinates": [ -78.90488844925261, 35.993249800603749 ] } },
+{ "type": "Feature", "properties": { "id": 4, "name": "Carolina Theatre" }, "geometry": { "type": "Point", "coordinates": [ -78.902929445500078, 35.99773074850539 ] } },
+{ "type": "Feature", "properties": { "id": 5, "name": "Museum of Life and Science" }, "geometry": { "type": "Point", "coordinates": [ -78.899353446911931, 36.029375542028063 ] } },
+{ "type": "Feature", "properties": { "id": 6, "name": "Sarah P. Duke Gardens" }, "geometry": { "type": "Point", "coordinates": [ -78.93280880264173, 36.002410799244927 ] } },
+{ "type": "Feature", "properties": { "id": 7, "name": "Duke Chapel" }, "geometry": { "type": "Point", "coordinates": [ -78.94025654076637, 36.00185198833853 ] } },
+{ "type": "Feature", "properties": { "id": 8, "name": "Cameron Indoor Stadium" }, "geometry": { "type": "Point", "coordinates": [ -78.942264689677714, 35.997397652368043 ] } },
+{ "type": "Feature", "properties": { "id": 9, "name": "Duke Lemur Center" }, "geometry": { "type": "Point", "coordinates": [ -78.96146074602639, 35.994217387025657 ] } }
+]
+}
