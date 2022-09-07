@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>Homework 3: Projections</h1>
+    <p>Sean Billy</p>
+    <p></p>
+    <h2>Procedure</h2>
+    <p>To create the projections I used a shapefile of the world from Natural Earth and added a grid of circles using the Indicatrix Mapper plugin on QGIS.
+        When changing the projection in QGIS, the shapefile and circles would change to demonstate how the projection depicts the world.
+    </p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>The circles projeced onto the WGS84 Projection are vertically consistent, however, near the poles they become stretched out on the horizontal.</h3>
+    <a href=".//maps/4326.png">
+    <img src=".//maps/4326.png" alt="WGS84" width='500px'>
+    </a>
+
+    <h2>Aitoff Projection</h2>
+    <h3>The Aitoff Projection is most consistet around the Equator and Prime Meridian. The further the circles get from there, the more warped they become.
+    </h3>
+    <a href=".//maps/54043.png">
+    <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
+    </a>
+
+    <h2>Pseudo-Mercator Projection</h2>
+    <h3>The Mercator Projection keeps the proportions of the circles the same regardless of position. However, as they get further North/South, they become much larger.
+        This leads to some locations, such as Greenland or Antarctica, appearing much larger than they actually are on the globe.
+    </h3>
+    <a href=".//maps/3857.png">
+    <img src=".//maps/3857.png" alt="Mercator" width='500px'>
+    </a>
+
+    <h2>Winkel I Projection</h2>
+        <h3>The Winkel I Projection is similar to the Aitoff, as both projections curve the image to replicate the effects of a globe. The main difference
+            between the Winkel I and Aitoff is that the circles on the Winkel I grow larger inare they get further North/South, while those on the Aitoff primarily
+            become stretched vertically.
+        </h3>
+        <a href=".//maps/53018.png">
+        <img src=".//maps/53018.png" alt="Winkel I" width='500px'>
+        </a>
+
+        <h2>Cylindrical Equal Area</h2>
+        <h3>Both this projection and the Mercator are cylindrical, with the main difference being the Cylindrical Equal Area projection is squished 
+            near the top and bottom, so that the areas remain consistent.</h3>
+        <a href=".//maps/54034.png">
+        <img src=".//maps/54034.png" alt="Cylindrical Equal Area" width='500px'>
+        </a>
+
+        <h2>World Equidistant Conic</h2>
+        <h3>This is a conic projection from the North Pole, meaning that the further you get from the North Pole, the less accurate it becomes. If you were going to
+            be mapping a location in the Southern Hemisphere, this projection would not be a good choice.
+        </h3>
+        <a href=".//maps/54027.png">
+        <img src=".//maps/54027.png" alt="World Equidistant Conic" width='500px'>
+        </a>
+
+        <h2>North Pole Azimuthal Equidistant</h2>
+        <h3>This projection looks similar to the World Equidistant Conic, but is azimuthal, meaning that the projection is formed by a flat
+            plane facing down from the North Pole.
+        </h3>
+        <a href=".//maps/102016.png">
+        <img src=".//maps/102016.png" alt="North Pole Azimuthal Equidistant" width='500px'>
+        </a>
+
+        <h2>South Pole Azimuthal Equistant</h2>
+        <h3>This projection is the same method as the North Pole Azimuthal Equidistant, but taken from the South Pole instead.</h3>
+        <a href=".//maps/102019.png">
+        <img src=".//maps/102019.png" alt="South Pole Azimuthal Equidistant" width='500px'>
+        </a>
+
+        <h2>World Van Der Grinten</h2>
+        <h3>The Van Der Grinten projection reminds me most of the Mercator, as the circles grow in area but do not become skewed. The largest
+            differences between the Van Der Grinten and Mercator is that the Van Der Grinten is curved and Antarctica is smaller on the Van Der Grinten.
+        </h3>
+        <a href=".//maps/54029.png">
+        <img src=".//maps/54029.png" alt="World Van Der Grinten" width='500px'>
+        </a>
+
+    <p></p>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
