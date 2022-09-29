@@ -12,11 +12,16 @@
 <p>The ratio presented on these maps is the Estimated K-12 Enrollment in Private Schools / Estimated K-12 Enrollment. 
     I created this ratio because I felt it would be interesting to see in which counties were private schools most popular. 
     From this ratio I found that in the county I was born in more than a third of the students go to private schools.</p>
-<h2>Classification 1: Type Here</h2>
+
+<h2>Classification 1: Quantiles</h2>
 <a href="Link to Map">
     <img src="NJRatio_Quantiles.png" alt="Ratio with choropleth classified by quantiles." width='500px'>
     </a>
-<p>Description</p>
+<p>This ratio is categorized using quantiles, where an equal amount of items are sorted into every class. This is good for emphasizing
+    the position of data in a set, however it can also make small differences appear too great. For example, from the other 
+    maps of this ratio we know that counties in north east have a similar ratio, but this categorization makes that appearence 
+    appear greater because one of the counties is in the highest grouping.
+</p>
 
 <h2>Classification 2: Equal Interval</h2>
 <a href="Link to Map">
@@ -27,11 +32,15 @@
     two classes. This disadvantage of equal intervals can be seen on this map, as most counties are a light shade 
     of green, with one county being very dark green.</p>
 
-<h2>Classification 3: Type Here</h2>
+<h2>Classification 3: Natural Breaks</h2>
 <a href="Link to Map">
     <img src="NJRatio_NatBreaks.png" alt="Ratio with choropleth classified by natural breaks." width='500px'>
     </a>
-<p>Description</p>
+<p>This ratio is categorized using natural breaks, meaning the items are sorted into groups by the data is naturally arranged 
+    into. This method works well with data that is unevenly distributed without being skewed in a direction. 
+    The disadvantages of this method are the ranges greatly vary in size and it can be difficult to compare maps created 
+    with different natural breaks.
+</p>
 
 <!-- Link to your shapefile in Github and you CSV -->
 <h2>Data used for this project</h2>
