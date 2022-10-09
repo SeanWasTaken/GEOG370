@@ -17,6 +17,17 @@
         <title></title>
     </head>
     <body>
+        <h1>Homework 7: Chloropleth or Proportional Symbol Map</h1>
+        <h2>Sean Billy</h2>
+        <h1>Railway Passengers Carried in 2015</h1>
+        <p>This map shows the number of Passengers carried multiplied by kilometers traveled, with the unit of passenger-kilometers. 
+            I selected this topic because I'm interested in means of travel that are not cars, and knowing how bad the United States'
+            passenger rail system is, I wanted to see how it compares to the rest of the world. I chose the year 2015 to display because
+            it was the most recent year with data for a large amount of countries. An issue I ran into while creating this visualization 
+            is that China and India's rail passengers carried are much higher than the rest of the world, so I had to play with the categories
+             to make it look right.
+        </p>
+
         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
@@ -154,5 +165,12 @@
         map.addLayer(layer_PassengersCarriedKmTraveled_0);
         setBounds();
         </script>
+        <p></p>
+        <h2>Data used for this project</h2>
+        <a href="https://ourworldindata.org/grapher/railways-passengers-carried-passenger-km"> Original Data </a>
+        <p></p>
+        <a href="2015_passengers_carried.csv"> Cleaned CSV </a>
+        <p></p>
+        <a href="railpassengers_4326.geojson"> Vector File </a>
     </body>
 </html>
