@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6</title>
+</head>
+<body>
+<h1>Homework 8: Geoprocessing Analysis</h1>
+<h2>Sean Billy</h2>
+<h2>Does Portland's bike infrastructure support all residents or just wealthier ones?</h2>
+<a href="Link to Map">
+    <img src="HW8map.png" alt="Map of Economic Vulnerability in Portland, Oregon with Areas within 100 meters of
+    Bike parking/routes and area covered by Bike Share service overlayed." width='1000px'>
+    </a>
+<p></p>
+<h2>Question and Why I chose it</h2>
+<p> Something that I'm interested in is moving away from car dependent infrastructure, and a major part of this is building new
+    bike infrastructure meant for getting from place to place and not just recreation. I saw that Portland has made large improvements 
+    to its bike infrastructure, but wanted to examine if these new investments have benefitted everyone, or just more affluent 
+    neighborhoods.
+
+</p>
+
+<h2>Methods Used</h2>
+<p>
+   From <a href="Portland GIS"> Portland's GIS website</a> I found a CSV of all bike parking and shapefiles for 
+   reccomended bike routes, the area covered 
+   by the city's bike share program, and the economic vulnerability of residents of different neighborhoods. First I 
+   made a 100 meter buffer around all the recommended bike routes and bike parking spots. Next I did the symmetric 
+   difference between this buffer and the area covered by the economic vulnerability shapefile to create a polygon with the 
+   areas covered by bike infrastructure not included. I dissolved this polygon to make it easier to understand and placed it 
+   over the economic vulnerability chloropleth, creating a map of the economic vulnerabilities supported by Portland's 
+   bike infrastructure.
+
+</p>
+<p></p>
+<h2>Data used</h2>
+    <a href="Bike_Parking_Area_Points.csv"> CSV dataset for Bike Parking </a>
+    <p></p>
+    <a href="Bike_Share_Service_Area.zip"> Shapefiles for Bike Share Service Area </a>
+    <p></p>
+    <a href="Recommended_Bicycle_Routes.zip"> Shapefiles for Recommended Bike Routes </a>
+    <p></p>
+    <a href="Vulnerability.zip"> Shapefile of Economic Vulnerability for different areas of Portland </a>
+    <p></p>
+    <a href="Notwith100m.geojson"> Shapefile for area not within 100 meters of Bike Parking or Bike Routes </a>
+    <p></p>
+</body>
+</html>
